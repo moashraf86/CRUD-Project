@@ -1,3 +1,10 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "new record",
+      "description": "Donkey awiii",
+      "userId": null,
+      "id": 1
+    }
+  ]
 }
