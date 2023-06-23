@@ -53,13 +53,13 @@ class StreamList extends React.Component {
   }
 
   renderCreateButton() {
-    if(this.props.isSignedIn) {
+    // if(this.props.isSignedIn) {
       return (
         <div className='bg-blue-500 text-slate-50 py-1 px-3 rounded-sm'>
           <Link to="/streams/new">+ Create Stream</Link>
         </div>
       )
-    }
+    // }
   }
 
   // Handle Delete Modal Visibility
@@ -118,7 +118,7 @@ const mapStateToProps = (state) => {
   return {
     streams: Object.values(state.streams),
     currentUserId: state.auth.userId,
-    isSignedIn: state.auth.isSignedIn
+    // isSignedIn: state.auth.isSignedIn
   }
 }
 export default connect(mapStateToProps, {fetchStreams, deleteStream})(StreamList)
